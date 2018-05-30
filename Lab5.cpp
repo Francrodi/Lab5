@@ -1,17 +1,56 @@
 #include <iostream>
+#include "h/Const.h"
 
-#include "../Lab5/cpp/Checks.cpp"
 using namespace std;
 
+bool checkPuntaje(int puntaje) {
+	return (puntaje >= MIN_PUNTAJE && puntaje <= MAX_PUNTAJE);
+}
+
+bool checkMinuto(int minuto) {
+	return (minuto >= MIN_MINUTO && minuto <= MAX_MINUTO);
+}
+
+bool checkHora(int hora) {
+	return (hora >= MIN_HORA && hora <= MAX_HORA);
+}
+
+bool checkDia(int dia) {
+	return (dia >= MIN_DIA && dia <= MAX_DIA);
+}
+
+bool checkMes(int mes) {
+	return (mes >= MIN_MES && mes <= MAX_MES);
+}
+
+bool checkAnio(int anio) {
+	return (anio > 0);
+}
+
 void printMenu() {
-
 	cout << "Bienvenidos al menu" << endl;
+}
 
-	int seleccion;
+void printMainMenu() {
+	cout << "[1] INICIAR SESION" << endl;
+	cout << "[10] SALIR" << endl;
+}
+
+int getInput() {
+	int input;
+	cin >> input;
+	return input;
+}
+
+void selectMenu() {
+
+	printMenu();
+	printMainMenu();
+
+	int seleccion = getInput();
 
 	do {
-		cout << "[1] INICIAR SESION" << endl;
-		cout << "[10] SALIR" << endl;
+		printMainMenu();
 
 		switch(seleccion) {
 		case 1:
@@ -29,7 +68,7 @@ void printMenu() {
 
 int main() {
 
-	printMenu();
+	selectMenu();
 
 	return 0;
 }
