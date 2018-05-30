@@ -27,7 +27,7 @@ bool checkAnio(int anio) {
 	return (anio > 0);
 }
 
-void printMenu() {
+void printStart() {
 	cout << "Bienvenidos al menu" << endl;
 }
 
@@ -44,13 +44,14 @@ int getInput() {
 
 void selectMenu() {
 
-	printMenu();
-	printMainMenu();
+	printStart();
 
-	int seleccion = getInput();
+	int seleccion = 0;
 
 	do {
 		printMainMenu();
+
+		seleccion = getInput();
 
 		switch(seleccion) {
 		case 1:
