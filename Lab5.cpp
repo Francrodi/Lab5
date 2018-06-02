@@ -8,12 +8,18 @@ using namespace std;
 int getIntInput() {
 	int input;
 	cin >> input;
+
+	// TODO: Check input != vacio
+
 	return input;
 }
 
 string getStringInput() {
 	string input;
 	cin >> input;
+
+	// TODO: Check input != vacio
+
 	return input;
 }
 
