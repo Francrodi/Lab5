@@ -11,7 +11,7 @@ private:
 	string direccion;
 
 public:
-	DtCine();
+	DtCine(int idCine, string direccion);
 	virtual ~DtCine();
 };
 

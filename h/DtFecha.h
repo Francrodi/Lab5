@@ -9,6 +9,7 @@ private:
 
 public:
 	DtFecha();
+	DtFecha(int dia, int mes, int anio);
 	virtual ~DtFecha();
 };
 

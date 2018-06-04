@@ -8,7 +8,10 @@ private:
 
 public:
 	DtHorario();
+	DtHorario(int, int);
 	virtual ~DtHorario();
+	int getHora();
+	int getMinuto();
 };
 
 #endif

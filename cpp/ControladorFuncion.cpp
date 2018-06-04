@@ -7,7 +7,7 @@ using namespace std;
 
 ControladorFuncion* ControladorFuncion::ctrlFuncion = NULL;
 
-ControladorFuncion::ControladorFuncion(){	// Incompleto
+ControladorFuncion::ControladorFuncion(){	//incompleto
 	cout << "ctrlFuncion creado";
 }
 
@@ -19,6 +19,6 @@ ControladorFuncion* ControladorFuncion::getCtrlFuncion() {
 	return ctrlFuncion;
 }
 
-void ControladorFuncion::eliminar(Funcion f) {	// Incompleto
+void ControladorFuncion::eliminar(Funcion f) {	//incompleto
 	cout << "eliminar f";
 }

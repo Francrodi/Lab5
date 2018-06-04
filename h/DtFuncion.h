@@ -12,6 +12,7 @@ private:
 
 public:
 	DtFuncion();
+	DtFuncion(int, DtHorario, DtFecha);
 	virtual ~DtFuncion();
 };
 

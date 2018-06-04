@@ -13,7 +13,7 @@ private:
 	string sinopsis;
 
 public:
-	DtPelicula();
+	DtPelicula(string titulo, string posterurl, string sinopsis);
 	virtual ~DtPelicula();
 };
 

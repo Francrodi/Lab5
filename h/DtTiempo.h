@@ -9,7 +9,7 @@ private:
 	DtHorario hora;
 
 public:
-	DtTiempo();
+	DtTiempo(DtFecha fecha, DtHorario hora);
 	virtual ~DtTiempo();
 };
 

@@ -8,6 +8,7 @@ ControladorReserva* ControladorReserva::ctrlReserva = NULL;
 
 ControladorReserva::ControladorReserva() {		//incompleto
 
+
 }
 
 ControladorReserva::~ControladorReserva() {		//incompleto
@@ -38,6 +39,6 @@ float ControladorReserva::ingresarBanco(EnumBanco banco) {		//incompleto
 }
 
 DtCosto ControladorReserva::ingresarFinanciera(string financiera) {		//incompleto
-	DtCosto dc;
+	DtCosto dc(0,0);
 	return dc;
 }

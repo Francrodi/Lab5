@@ -27,6 +27,8 @@ void ControladorReloj::modificarFecha(DtFecha fecha, DtHorario horario) {		//inc
 }
 
 DtTiempo ControladorReloj::cosultarFecha() {		//incompleto
-	DtTiempo dt;
+	DtFecha f(0,0,0);
+	DtHorario h(0,0);
+	DtTiempo dt(f, h);
 	return dt;
 }

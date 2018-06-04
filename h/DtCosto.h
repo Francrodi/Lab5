@@ -7,7 +7,7 @@ private:
 	float descuento;
 
 public:
-	DtCosto();
+	DtCosto(float costo, float descuento);
 	virtual ~DtCosto();
 };
 
