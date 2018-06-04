@@ -11,6 +11,7 @@ private:
 	string titulo;
 	string posterurl;
 	string sinopsis;
+
 public:
 	DtPelicula();
 	virtual ~DtPelicula();

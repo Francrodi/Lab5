@@ -1,5 +1,6 @@
-#include "../h/Fabrica.h"
 #include <iostream>
+
+#include "../h/Fabrica.h"
 #include "../h/ControladorFuncion.h"
 #include "../h/ControladorPelicula.h"
 #include "../h/ControladorReloj.h"

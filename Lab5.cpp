@@ -1,7 +1,6 @@
 #include <iostream>
 
 #include "h/Checks.h"
-#include "h/Const.h"
 
 using namespace std;
 
@@ -14,6 +13,8 @@ int getIntInput() {
 	return input;
 }
 
+// TODO: Combinar inputs en solo string?
+
 string getStringInput() {
 	string input;
 	cin >> input;
@@ -24,7 +25,9 @@ string getStringInput() {
 }
 
 void printStart() {
-	cout << "Bienvenidos al menu" << endl;
+	cout << "*******************" << endl;
+	cout << "*****CINE GR02*****" << endl;
+	cout << "*******************" << endl;
 }
 
 void printMainMenu() {

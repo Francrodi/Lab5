@@ -4,12 +4,13 @@
 #include "DtHorario.h"
 
 class DtTiempo {
-	public:
-		DtTiempo();
-		virtual ~DtTiempo();
-	private:
-		DtFecha fecha;
-		DtHorario hora;
+private:
+	DtFecha fecha;
+	DtHorario hora;
+
+public:
+	DtTiempo();
+	virtual ~DtTiempo();
 };
 
 #endif

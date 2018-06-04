@@ -11,6 +11,7 @@ class Credito : public Tarjeta {
 private:
     float descuento;
     string financiera;
+
 public:
 	Credito();
 	virtual ~Credito();

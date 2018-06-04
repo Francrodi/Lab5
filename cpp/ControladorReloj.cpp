@@ -1,5 +1,7 @@
-#include "../h/ControladorReloj.h"
 #include <iostream>
+
+#include "../h/ControladorReloj.h"
+
 using namespace std;
 
 ControladorReloj* ControladorReloj::ctrlReloj = NULL;

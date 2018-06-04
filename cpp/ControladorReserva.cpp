@@ -1,11 +1,12 @@
-#include "../h/ControladorReserva.h"
 #include <iostream>
+
+#include "../h/ControladorReserva.h"
+
 using namespace std;
 
 ControladorReserva* ControladorReserva::ctrlReserva = NULL;
 
 ControladorReserva::ControladorReserva() {		//incompleto
-
 
 }
 

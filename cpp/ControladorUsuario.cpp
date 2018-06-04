@@ -1,5 +1,7 @@
-#include "../h/ControladorUsuario.h"
 #include <iostream>
+
+#include "../h/ControladorUsuario.h"
+
 using namespace std;
 
 ControladorUsuario* ControladorUsuario::ctrlUsuario = NULL;
