@@ -11,8 +11,7 @@ using namespace std;
 
 class IReserva {
 public:
-	IReserva();
-	virtual ~IReserva();
+	virtual ~IReserva(){};
 	virtual void elegirFuncion(int idFuncion, int cant_asientos) = 0;
 	virtual float ingresarBanco(EnumBanco banco) = 0;
 	virtual DtCosto ingresarFinanciera(string financiera) = 0;

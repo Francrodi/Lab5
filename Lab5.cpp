@@ -9,7 +9,7 @@ int getIntInput() {
 	int input;
 	cin >> input;
 
-	// TODO: Check input != vacio
+	// TODO: Check input != vacio?
 
 	return input;
 }
@@ -18,7 +18,7 @@ string getStringInput() {
 	string input;
 	cin >> input;
 
-	// TODO: Check input != vacio
+	// TODO: Check input != vacio?
 
 	return input;
 }
@@ -51,7 +51,7 @@ void iniciarSesion() {
 	string pass = getStringInput();
 }
 
-int main() {
+void selectMenu() {
 
 	printStart();
 
@@ -79,6 +79,11 @@ int main() {
 			break;
 		}
 	} while (seleccion != 10);
+}
+
+int main() {
+
+	selectMenu();
 
 	return 0;
 }

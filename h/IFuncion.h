@@ -5,9 +5,8 @@
 
 class IFuncion {
 public:
-	IFuncion();
-	virtual ~IFuncion();
-	virtual void eliminar(Funcion f);
+	virtual ~IFuncion(){};
+	virtual void eliminar(Funcion f) = 0;
 };
 
 #endif
