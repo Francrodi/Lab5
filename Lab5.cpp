@@ -41,11 +41,66 @@ void printMainMenu() {
 void cargarDatos() {
 	cout << "Empezando la carga de datos..." << endl;
 	cout << "------------------------------" << endl;
+
+	/////////////////////////////////////////////////
+
+	// -- CINES
 	int contCine;
-	for (contCine = 1; contCine <= 2; contCine++) {
-		cout << "\t";
-		cout << "Se agrega el cine 1 - 2 - A" << endl;
-	}
+	cout << "CINES" << endl;
+
+	cout << "\tSe agrega el cine: " << endl;
+
+	// -- SALAS
+	int contSala;
+	cout << "SALAS" << endl;
+
+	cout << "\tSe agrega la sala: " << endl;
+
+	// -- PELICULAS
+	int contPelicula;
+	cout << "PELICULAS" << endl;
+
+	cout << "\tSe agrega la pelicula: " << endl;
+
+	// -- FUNCIONES
+	int contFuncion;
+	cout << "FUNCIONES" << endl;
+
+	cout << "\tSe agrega la funcion: " << endl;
+
+	// -- USUARIOS
+	int contUsuarios;
+	cout << "USUARIOS" << endl;
+
+	cout << "\tSe agrega el usuario: " << endl;
+
+	// -- FINANCIERAS
+	int contFinancieras;
+	cout << "FINANCIERAS" << endl;
+
+	cout << "\tSe agrega la financiera: " << endl;
+
+	// -- COMENTARIOS
+	int contComentarios;
+	cout << "COMENTARIOS" << endl;
+
+	cout << "\tSe agrega el comentario: " << endl;
+
+	// -- PUNTAJES
+	int contPuntajes;
+	cout << "PUNTAJES" << endl;
+
+	cout << "\tSe agrega el puntaje: " << endl;
+
+	// -- RESERVAS
+	int contReservas;
+	cout << "RESERVAS" << endl;
+
+	cout << "\tSe agrega la reserva: " << endl;
+
+	/////////////////////////////////////////////////
+
+	cout << "Termina la carga de datos" << endl;
 }
 
 void iniciarSesion() {
