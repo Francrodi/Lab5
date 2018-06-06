@@ -2,8 +2,9 @@
 
 #include "h/Checks.h"
 #include "h/Const.h"
-#include "h/IUsuario.h"
 #include "h/Fabrica.h"
+
+#include "h/IUsuario.h"
 
 using namespace std;
 
@@ -24,8 +25,8 @@ void printStart() {
 }
 
 void printMainMenu() {
-	cout << "[1] INICIAR SESION" << endl;
-	cout << "[2] DEFAULT XXXXXXXX" << endl;
+	cout << "[1] CARGAR DATOS"     << endl;
+	cout << "[2] INICIAR SESION"   << endl;
 	cout << "[3] DEFAULT XXXXXXXX" << endl;
 	cout << "[4] DEFAULT XXXXXXXX" << endl;
 	cout << "[5] DEFAULT XXXXXXXX" << endl;
@@ -37,9 +38,20 @@ void printMainMenu() {
 	cout << "Ingrese opcion: ";
 }
 
+void cargarDatos() {
+	cout << "Empezando la carga de datos..." << endl;
+	cout << "------------------------------" << endl;
+	int contCine;
+	for (contCine = 1; contCine <= 2; contCine++) {
+		cout << "\t";
+		cout << "Se agrega el cine 1 - 2 - A" << endl;
+	}
+}
+
 void iniciarSesion() {
 	cout << "Ingrese usuario y contraseña" << endl;
 	cout << "USUARIO: " << endl;
+
 	string user = getStringInput();
 	Fabrica* fabrica = Fabrica::getFabrica();
     IUsuario* interface_usuario = fabrica->getIUsuario();
@@ -63,9 +75,10 @@ void selectMenu() {
 
 		switch(seleccion) {
 		case 1:
-			iniciarSesion();
+			cargarDatos();
 			break;
 		case 2:
+			iniciarSesion();
 			break;
 		case 3:
 			break;
