@@ -41,9 +41,9 @@ void iniciarSesion() {
 	cout << "Ingrese usuario y contraseña" << endl;
 	cout << "USUARIO: " << endl;
 	string user = getStringInput();
-	Fabrica * fabrica = Fabrica::getFabrica();
-     IUsuario * interface_usuario = fabrica->getIUsuario();
-     interface_usuario->inicioNick(user);
+	Fabrica* fabrica = Fabrica::getFabrica();
+    IUsuario* interface_usuario = fabrica->getIUsuario();
+    interface_usuario->inicioNick(user);
 	//inicioNick(user);
 
 	cout << "CONTRASEÑA: " << endl;
