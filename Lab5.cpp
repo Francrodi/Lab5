@@ -43,6 +43,8 @@ void cargarDatos() {
 	cout << "------------------------------" << endl;
 
 	/////////////////////////////////////////////////
+	// TODO: Agregar los datos al programa
+	Fabrica* fabrica = Fabrica::getFabrica();
 
 	// -- CINES
 	int contCine;
@@ -50,11 +52,15 @@ void cargarDatos() {
 
 	cout << "\tSe agrega el cine: " << endl;
 
+	cout << "Se completa la carga de cines" << endl;
+
 	// -- SALAS
 	int contSala;
 	cout << "SALAS" << endl;
 
 	cout << "\tSe agrega la sala: " << endl;
+
+	cout << "Se completa la carga de salas" << endl;
 
 	// -- PELICULAS
 	int contPelicula;
@@ -62,11 +68,15 @@ void cargarDatos() {
 
 	cout << "\tSe agrega la pelicula: " << endl;
 
+	cout << "Se completa la carga de peliculas" << endl;
+
 	// -- FUNCIONES
 	int contFuncion;
 	cout << "FUNCIONES" << endl;
 
 	cout << "\tSe agrega la funcion: " << endl;
+
+	cout << "Se completa la carga de funciones" << endl;
 
 	// -- USUARIOS
 	int contUsuarios;
@@ -74,11 +84,15 @@ void cargarDatos() {
 
 	cout << "\tSe agrega el usuario: " << endl;
 
+	cout << "Se completa la carga de usuarios" << endl;
+
 	// -- FINANCIERAS
 	int contFinancieras;
 	cout << "FINANCIERAS" << endl;
 
 	cout << "\tSe agrega la financiera: " << endl;
+
+	cout << "Se completa la carga de financieras" << endl;
 
 	// -- COMENTARIOS
 	int contComentarios;
@@ -86,17 +100,23 @@ void cargarDatos() {
 
 	cout << "\tSe agrega el comentario: " << endl;
 
+	cout << "Se completa la carga de comentarios" << endl;
+
 	// -- PUNTAJES
 	int contPuntajes;
 	cout << "PUNTAJES" << endl;
 
 	cout << "\tSe agrega el puntaje: " << endl;
 
+	cout << "Se completa la carga de puntajes" << endl;
+
 	// -- RESERVAS
 	int contReservas;
 	cout << "RESERVAS" << endl;
 
 	cout << "\tSe agrega la reserva: " << endl;
+
+	cout << "Se completa la carga de reservas" << endl;
 
 	/////////////////////////////////////////////////
 
@@ -117,7 +137,7 @@ void iniciarSesion() {
 	string pass = getStringInput();
 }
 
-void selectMenu() {
+int main() {
 
 	printStart();
 
@@ -146,11 +166,6 @@ void selectMenu() {
 			break;
 		}
 	} while (seleccion != 10);
-}
-
-int main() {
-
-	selectMenu();
 
 	return 0;
 }
