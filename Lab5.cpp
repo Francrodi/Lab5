@@ -1,33 +1,26 @@
 #include <iostream>
 
 #include "h/Checks.h"
+#include "h/Const.h"
+#include "h/IUsuario.h"
+#include "h/Fabrica.h"
 
 using namespace std;
 
 int getIntInput() {
 	int input;
 	cin >> input;
-
-	// TODO: Check input != vacio?
-
 	return input;
 }
-
-// TODO: Combinar inputs en solo string?
 
 string getStringInput() {
 	string input;
 	cin >> input;
-
-	// TODO: Check input != vacio?
-
 	return input;
 }
 
 void printStart() {
-	cout << "*******************" << endl;
-	cout << "*****CINE GR02*****" << endl;
-	cout << "*******************" << endl;
+	cout << "Bienvenidos al menu" << endl;
 }
 
 void printMainMenu() {
@@ -46,9 +39,12 @@ void printMainMenu() {
 
 void iniciarSesion() {
 	cout << "Ingrese usuario y contraseña" << endl;
-
 	cout << "USUARIO: " << endl;
 	string user = getStringInput();
+	Fabrica * fabrica = Fabrica::getFabrica();
+     IUsuario * interface_usuario = fabrica->getIUsuario();
+     interface_usuario->inicioNick(user);
+	//inicioNick(user);
 
 	cout << "CONTRASEÑA: " << endl;
 	string pass = getStringInput();

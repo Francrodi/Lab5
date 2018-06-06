@@ -3,17 +3,19 @@
 
 #include "DtFecha.h"
 #include "DtHorario.h"
+#include "ICollectible.h"
+#include "ICollection.h"
 
-class DtFuncion {
-private:
-	int idFuncion;
-	DtFecha fecha;
-	DtHorario horario;
+class DtFuncion: public ICollectible {
+	private:
+		int idFuncion;
+		DtFecha fecha;
+		DtHorario horario;
 
-public:
-	DtFuncion();
-	DtFuncion(int, DtHorario, DtFecha);
-	virtual ~DtFuncion();
+	public:
+		DtFuncion();
+		DtFuncion(int, DtHorario, DtFecha);
+		virtual ~DtFuncion();
 };
 
 #endif

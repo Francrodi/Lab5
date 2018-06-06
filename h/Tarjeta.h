@@ -2,6 +2,8 @@
 #define TARJETA_H
 
 class Tarjeta {
+private:
+
 public:
 	Tarjeta();
 	virtual ~Tarjeta();

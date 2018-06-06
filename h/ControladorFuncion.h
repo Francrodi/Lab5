@@ -1,19 +1,25 @@
 #ifndef CONTROLADORFUNCION_H_
 #define CONTROLADORFUNCION_H_
 
-#include "IFuncion.h"
 #include "Funcion.h"
-
+#include "IFuncion.h"
+#include "ICollectible.h"
+#include "ICollection.h"
 
 class ControladorFuncion: public IFuncion {
-private:
-	ControladorFuncion();
-	static ControladorFuncion* ctrlFuncion;
+	private:
+		ControladorFuncion();
+		static ControladorFuncion* ctrlFuncion;
 
-public:
-	virtual ~ControladorFuncion(){};
-	static ControladorFuncion* getCtrlFuncion();
-	void eliminar(Funcion f);
+		//Pseudoatributos
+		ICollection * funciones;
+	public:
+		static ControladorFuncion* getCtrlFuncion();
+		virtual ~ControladorFuncion();
+
+		int getPrecio(int idFuncion);
+		Funcion* encontrarFuncion(int idFuncion);
+		void eliminar(Funcion* f);
 };
 
 #endif

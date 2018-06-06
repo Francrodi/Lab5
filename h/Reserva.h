@@ -1,13 +1,18 @@
 #ifndef RESERVA_H_
 #define RESERVA_H_
 
-class Reserva {
+#include "ICollectible.h"
+#include "ICollection.h"
+
+using namespace std;
+
+class Reserva: public ICollectible {
 private:
 	int cant_asientos;
 	float costo;
 
 public:
-	Reserva();
+	Reserva(int, float);
 	virtual ~Reserva();
 };
 

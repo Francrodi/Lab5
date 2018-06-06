@@ -2,10 +2,11 @@
 #define DTCINE_H_
 
 #include <string>
+#include "ICollectible.h"
 
 using namespace std;
 
-class DtCine {
+class DtCine: public ICollectible {
 private:
 	int idCine;
 	string direccion;

@@ -1,34 +1,20 @@
-#include <iostream>
-
 #include "../h/ControladorReloj.h"
-
-using namespace std;
+#include <iostream>
 
 ControladorReloj* ControladorReloj::ctrlReloj = NULL;
 
-ControladorReloj::ControladorReloj() {		//incompleto
+ControladorReloj::ControladorReloj() {
 
 
 }
 
-ControladorReloj::~ControladorReloj() {		//incompleto
+ControladorReloj::~ControladorReloj() {
 
 }
 
-ControladorReloj* ControladorReloj::getCtrlReloj() { //singleton
+ControladorReloj* ControladorReloj::getCtrlReloj() {
 	if(ctrlReloj == NULL) {
 		ctrlReloj = new ControladorReloj;
 	}
 	return ctrlReloj;
-}
-
-void ControladorReloj::modificarFecha(DtFecha fecha, DtHorario horario) {		//incompleto
-	cout << "modificar fecha";
-}
-
-DtTiempo ControladorReloj::cosultarFecha() {		//incompleto
-	DtFecha f(0,0,0);
-	DtHorario h(0,0);
-	DtTiempo dt(f, h);
-	return dt;
 }

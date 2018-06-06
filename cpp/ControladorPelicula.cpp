@@ -1,13 +1,13 @@
-#include <iostream>
-
 #include "../h/ControladorPelicula.h"
+#include <iostream>
 
 ControladorPelicula* ControladorPelicula::ctrlPelicula = NULL;
 
-ControladorPelicula::~ControladorPelicula() {	//incompleto
+ControladorPelicula::ControladorPelicula() {
 
 }
-ControladorPelicula::ControladorPelicula(){	//incompleto
+
+ControladorPelicula::~ControladorPelicula() {
 
 }
 
@@ -18,34 +18,31 @@ ControladorPelicula* ControladorPelicula::getCtrlPelicula() {
 	return ctrlPelicula;
 }
 
-DtFuncion ControladorPelicula::elegirCine(int idCine) {	//incompleto
-	DtFuncion df;
-	return df;
+/*
+DtFuncion ControladorPelicula::elegirCine(int idCine) {
+	return new DtFuncion;
 }
 
-string ControladorPelicula::verPeliculas() {	//incompleto
+string ControladorPelicula::verPeliculas() {
 	return "test";
 }
 
-DtPelicula ControladorPelicula::seleccionaPelicula(string titulo) {		//incompleto
-	DtPelicula dp("titulo", "poster", "url");
-	return dp;
+DtPelicula ControladorPelicula::seleccionaPelicula(string titulo) {
+	return new DtPelicula;
 }
-DtCine ControladorPelicula::verInformacionAdicional() {		//incompleto
-	DtCine dc(0, "direccion");
-	return dc;
+DtCine ControladorPelicula::verInformacionAdicional() {
+	return new DtCine;
 }
 
-Funcion* ControladorPelicula::encontrarFuncion(int idFuncion) {		//incompleto
-	Funcion* f = new Funcion();
-	return f;
+Funcion ControladorPelicula::encontrarFuncion(int idFuncion) {
+	return new Funcion;
 }
 
-void ControladorPelicula::olvidarPelicula() {		//incompleto
+void ControladorPelicula::olvidarPelicula() {
 
 }
 
-void ControladorPelicula::eligePelicula(string titulo) {		//incompleto
+void ControladorPelicula::eligePelicula(string titulo) {
 
 }
-
+*/

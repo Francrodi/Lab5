@@ -1,5 +1,4 @@
 #include "../h/DtHorario.h"
-
 DtHorario::DtHorario(){		//constructor por defecto 0:0
 	this->hora = 0;
 	this->minuto = 0;
@@ -21,5 +20,3 @@ int DtHorario::getHora() {
 int DtHorario::getMinuto() {
 	return this->minuto;
 }
-
-

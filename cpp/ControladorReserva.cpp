@@ -1,44 +1,20 @@
-#include <iostream>
-
 #include "../h/ControladorReserva.h"
-
-using namespace std;
+#include <iostream>
 
 ControladorReserva* ControladorReserva::ctrlReserva = NULL;
 
-ControladorReserva::ControladorReserva() {		//incompleto
+ControladorReserva::ControladorReserva() : IReserva() {
 
 
 }
 
-ControladorReserva::~ControladorReserva() {		//incompleto
+ControladorReserva::~ControladorReserva() {
 
 }
 
 ControladorReserva* ControladorReserva::getCtrlReserva() {
 	if(ctrlReserva == NULL) {
-		ctrlReserva = new ControladorReserva;
+		ctrlReserva = new ControladorReserva();
 	}
 	return ctrlReserva;
-}
-
-void ControladorReserva::confirmarReserva(bool confirmar) {		//incompleto
-	cout << "confirmar reserva";
-}
-
-void ControladorReserva::elegirFuncion(int idFuncion, int cant_asientos) {		//incompleto
-	cout << "elegir funcion";
-}
-
-void ControladorReserva::eliminar(Reserva r) {		//incompleto
-	cout << "eliminar";
-}
-
-float ControladorReserva::ingresarBanco(EnumBanco banco) {		//incompleto
-	return 0;
-}
-
-DtCosto ControladorReserva::ingresarFinanciera(string financiera) {		//incompleto
-	DtCosto dc(0,0);
-	return dc;
 }
