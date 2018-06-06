@@ -38,17 +38,16 @@ ICollection* Pelicula::getCines(){
 	IIterator* it = this->cines->getIterator(); //la operacion getIterator hace un new
 	ICollection* coleccionDtCine = new List();
 	Cine* cine;
-	DtCine* ptrDtCine; //no seria DtCine??****
+	DtCine* ptrDtCine;
 	while(it->hasCurrent()){
-		cine = dynamic_cast<Pelicula*>(it->getCurrent()); //Esto es porque it->getCurrent() devuelve un ICollectible que es una generalización de Pelicula
-			//ptrDtPelicula = (DtPelicula*)malloc(sizeof(DtPelicula*)); //para que?****
+		cine = dynamic_cast<Cine*>(it->getCurrent());
 		ptrDtCine = cine->getInfoCine();
 		coleccionDtCine->add(ptrDtCine);
 		it->next();
 	}
 	delete it; //borro la memoria creada por el getIterator
 
-	return coleccionDtCine; //no deberia devolver una coleccion de DtCine??****
+	return coleccionDtCine;
 }
 
 ICollection* Pelicula::getFunciones(int idCine){
