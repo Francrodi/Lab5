@@ -24,12 +24,12 @@ class ControladorPelicula: public IPelicula{
 		///*SET(DtCine)*/ DtCine verInformacionAdicional();
 		//void olvidarPelicula();
 		//Funcion encontrarFuncion(int idFuncion);
-	//	DtComentario eligePelicula(string);  //TIENE QUE GUARDAR EN MEMORIA LA PELICULA*
-		void ingresaComentario(string);
-		void usuarioResponde(int,string);
+		DtComentario eligePelicula(string);  //TIENE QUE GUARDAR EN MEMORIA LA PELICULA*
+		void ingresaComentario(string);		// Comenta la pelicula recordada
+		void usuarioResponde(int,string);	// (id, comentario)
 		int getcontadorComentarios();
 		void setcontadorComentarios(int);
-		Pelicula* getpelicula();
+		//Pelicula* getpelicula(); 	// ??
 
 };
 
