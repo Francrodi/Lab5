@@ -1,6 +1,7 @@
 #include "../h/ControladorFuncion.h"
 #include "../h/List.h"
 #include <iostream>
+#include <stdexcept>
 
 ControladorFuncion* ControladorFuncion::ctrlFuncion = NULL;
 

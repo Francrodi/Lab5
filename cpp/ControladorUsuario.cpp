@@ -1,6 +1,7 @@
 #include "../h/ControladorUsuario.h"
 #include "../h/List.h"
 #include <iostream>
+#include <stdexcept>
 
 ControladorUsuario* ControladorUsuario::ctrlUsuario = NULL;
 

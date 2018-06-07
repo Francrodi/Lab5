@@ -8,19 +8,17 @@
 
 using namespace std;
 
-Comentario::Comentario(string comentario, Usuario* usuario) : ICollectible() {
+Comentario::Comentario(string comentario, Usuario* usuario, int idComentario) : ICollectible() {
 	this->comentario = comentario;
-//Contador global de ids de Comentarios
-/*	this->idComentario = CONTADORGLOBAL; */   this->idComentario = 2018;
-	this->comentarioPadre = 0;
+	this->idComentario = idComentario;
+	this->comentarioPadre = NULL;
 	this->Comentarios = new List(); //NULL?
 	this->usuario = usuario;
 }
 
-Comentario::Comentario(string comentario, Usuario* usuario, int comentarioPadre) : ICollectible() {
+Comentario::Comentario(string comentario, Usuario* usuario, Comentario* comentarioPadre, int idComentario) : ICollectible() {
 	this->comentario = comentario;
-//Contador global de ids de Comentarios
-	/*	this->idComentario = CONTADORGLOBAL; */   this->idComentario = 2018;
+	this->idComentario = idComentario;
 	this->comentarioPadre = comentarioPadre;
 	this->Comentarios = new List(); //NULL?
 	this->usuario = usuario;
@@ -38,7 +36,7 @@ int Comentario::getidComentario(){
 	return this->idComentario;
 }
 
-int Comentario::getcomentarioPadre(){
+Comentario* Comentario::getcomentarioPadre(){
 	return this->comentarioPadre;
 }
 

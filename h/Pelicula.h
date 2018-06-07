@@ -26,6 +26,9 @@ class Pelicula: public ICollectible {
 		DtPelicula* getDatos();
 		ICollection* getCines();
 		ICollection* getFunciones(int idCine);
+
+		void ingresaComentario(string, int);
+		void usuarioResponde(int,string,int);
 };
 
 #endif

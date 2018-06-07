@@ -12,9 +12,12 @@ private:
     float descuento;
     string financiera;
 public:
-	Credito();
+	Credito(float, string);
 	virtual ~Credito();
 	float getPrecioTotal(int precio_asiento, int cant_asientos);
+	float getdescuento();
+	string getfinanciera();
+
 };
 
 #endif
