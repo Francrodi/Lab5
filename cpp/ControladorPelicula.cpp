@@ -51,16 +51,17 @@ void ControladorPelicula::eligePelicula(string titulo) {
 
 //agregados vale
 /*
-DtCoemntario ControladorPelicula::eligePelicula(string titulo) {
-
+DtComentario ControladorPelicula::eligePelicula(string titulo) {
+	//buscar en la coleccion de peliculas la pelicula con titulo, obtengo p*
+	//this->pelicula = p;
+	//obtener la coleccion de comentarios de p y pasarlos a DtComentario. retornar el set.
 }
 */
 
 void ControladorPelicula::ingresaComentario(string comentario) {
 	int idComentario = getcontadorComentarios();
 	setcontadorComentarios(idComentario++);
-//	Pelicula* p = getpelicula();
-	//buscar el Comentario* con ese id?
+	//Pelicula* p = getpelicula();
 	//p->ingresaComentario(comentario,idComentario);
 }
 

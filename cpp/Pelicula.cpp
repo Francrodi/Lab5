@@ -42,7 +42,7 @@ ICollection* Pelicula::getCines(){
 	while(it->hasCurrent()){
 		cine = dynamic_cast<Cine*>(it->getCurrent());
 		ptrDtCine = cine->getInfoCine();
-		coleccionDtCine->add(ptrDtCine);
+//		coleccionDtCine->add(ptrDtCine);
 		it->next();
 	}
 	delete it; //borro la memoria creada por el getIterator
@@ -71,7 +71,7 @@ ICollection* Pelicula::getFunciones(int idCine){
 
 //agregado vale
 void Pelicula::ingresaComentario(string comentario,int idComentario) {
-	//constructor de comentario
+
 }
 
 void Pelicula::usuarioResponde(int idpadre,string comentario,int idComentario) {

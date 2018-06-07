@@ -2,13 +2,17 @@
 #define CONTROLADORPELICULA_H_
 #include "IPelicula.h"
 #include "Pelicula.h"
+#include "DtComentario.h"
+#include "ICollectible.h"
+
+using namespace std;
 
 class ControladorPelicula: public IPelicula{
 	private:
 		static ControladorPelicula* ctrlPelicula;
 		ControladorPelicula();
 		int contadorComentarios;
-		Pelicula* pelicula;
+		ICollectible* peliculas;	//lista de peliculas
 
 	public:
 		static ControladorPelicula* getCtrlPelicula();
@@ -20,7 +24,7 @@ class ControladorPelicula: public IPelicula{
 		///*SET(DtCine)*/ DtCine verInformacionAdicional();
 		//void olvidarPelicula();
 		//Funcion encontrarFuncion(int idFuncion);
-		// SET(DtComentario) eligePelicula(string)  //TIENE QUE GUARDAR EN MEMORIA LA PELICULA*
+	//	DtComentario eligePelicula(string);  //TIENE QUE GUARDAR EN MEMORIA LA PELICULA*
 		void ingresaComentario(string);
 		void usuarioResponde(int,string);
 		int getcontadorComentarios();

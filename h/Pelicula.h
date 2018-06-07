@@ -16,6 +16,8 @@ class Pelicula: public ICollectible {
 		//Pseudoatributos
 		ICollection* cines;
 		ICollection* funciones;
+		ICollection* comentarios;
+		ICollection* puntuaciones;
 	public:
 		Pelicula(string titulo, string posterurl, string sinopsis, int duracion_min, int promedio_puntaje);
 		virtual ~Pelicula();

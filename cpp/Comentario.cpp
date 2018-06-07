@@ -11,8 +11,8 @@ using namespace std;
 Comentario::Comentario(string comentario, Usuario* usuario, int idComentario) : ICollectible() {
 	this->comentario = comentario;
 	this->idComentario = idComentario;
-	this->comentarioPadre = NULL;
-	this->Comentarios = new List(); //NULL?
+	this->comentarioPadre = NULL;	 // Es comentario padre
+	this->Comentarios = NULL;	// Arranca sin respuestas
 	this->usuario = usuario;
 }
 
@@ -20,7 +20,7 @@ Comentario::Comentario(string comentario, Usuario* usuario, Comentario* comentar
 	this->comentario = comentario;
 	this->idComentario = idComentario;
 	this->comentarioPadre = comentarioPadre;
-	this->Comentarios = new List(); //NULL?
+	this->Comentarios = NULL;	// Arranca sin respuestas
 	this->usuario = usuario;
 }
 
@@ -28,15 +28,15 @@ Comentario::~Comentario(){
 
 }
 
-string Comentario::getcomentario(){
+string Comentario::getComentario(){
 	return this->comentario;
 }
 
-int Comentario::getidComentario(){
+int Comentario::getIdComentario(){
 	return this->idComentario;
 }
 
-Comentario* Comentario::getcomentarioPadre(){
+Comentario* Comentario::getComentarioPadre(){
 	return this->comentarioPadre;
 }
 
@@ -44,6 +44,6 @@ ICollection* Comentario::getComentarios(){
 	return this->Comentarios;
 }
 
-Usuario* Comentario::getusuario(){
+Usuario* Comentario::getUsuario(){
 	return this->usuario;
 }
