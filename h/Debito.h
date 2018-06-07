@@ -9,9 +9,10 @@ private:
 	EnumBanco banco;
 
 public:
-	Debito();
+	Debito(EnumBanco);
 	virtual ~Debito();
 	float getPrecioTotal(int precio_asiento, int cant_asientos);
+	EnumBanco getbanco();
 };
 
 #endif

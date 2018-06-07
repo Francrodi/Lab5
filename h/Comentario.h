@@ -15,19 +15,20 @@ class Comentario: public ICollectible {
 	private:
 		string comentario;
 		int idComentario;
-		int comentarioPadre;
+		//comentario al que respondo
+		Comentario* comentarioPadre;
 		//comentario de comentario
 		ICollection * Comentarios;
 		//pseudo atributo de la relacion entre Comentario y Usuario
 		Usuario* usuario;
 
 	public:
-		Comentario(string, Usuario*);
 		Comentario(string, Usuario*, int);
+		Comentario(string, Usuario*, Comentario*, int);
 		virtual ~Comentario();
 		string getcomentario();
 		int getidComentario();
-		int getcomentarioPadre();
+		Comentario* getcomentarioPadre();
 		ICollection* getComentarios();
 		Usuario* getusuario();
 

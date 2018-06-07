@@ -68,3 +68,14 @@ ICollection* Pelicula::getFunciones(int idCine){
 
 	return coleccionDtFuncion;
 }
+
+//agregado vale
+void Pelicula::ingresaComentario(string comentario,int idComentario) {
+	//constructor de comentario
+}
+
+void Pelicula::usuarioResponde(int idpadre,string comentario,int idComentario) {
+	//constructor de comentario
+}
+
+
