@@ -1,5 +1,6 @@
 #include "../h/ControladorPelicula.h"
 #include <iostream>
+#include <stdexcept>
 
 ControladorPelicula* ControladorPelicula::ctrlPelicula = NULL;
 

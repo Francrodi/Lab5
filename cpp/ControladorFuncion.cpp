@@ -30,14 +30,14 @@ Funcion* ControladorFuncion::encontrarFuncion(int idFuncion){
 	Funcion* funcion;
 	bool existeFuncion = false;
 	while(it->hasCurrent() && !existeFuncion){
-		funcion = dynamic_cast<Funcion*>(it->getCurrent()); //Esto es porque it->getCurrent() devuelve un ICollectible que es una generalizaci髇 de Funci髇
+		funcion = dynamic_cast<Funcion*>(it->getCurrent()); //Esto es porque it->getCurrent() devuelve un ICollectible que es una generalizaci贸n de Funci贸n
 		if(funcion->getID() == idFuncion)
 			existeFuncion = true;
 		it->next();
 	}
 	delete it; //borro la memoria creada por el getIterator
 	if(!existeFuncion)
-		throw invalid_argument("El id de la funci髇 ingresado no pertenece a ninguna funci髇 registrada.");
+		throw invalid_argument("El id de la funci贸n ingresado no pertenece a ninguna funci贸n registrada.");
 	else
 		return funcion;
 }
