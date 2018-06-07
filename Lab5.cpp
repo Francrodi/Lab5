@@ -133,7 +133,7 @@ void iniciarSesion() {
     interface_usuario->inicioNick(user);
 	//inicioNick(user);
 
-	cout << "CONTRASEÃ‘A: " << endl;
+	cout << "CONTRASEÑA: " << endl;
 	string pass = getStringInput();
 }
 
