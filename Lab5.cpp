@@ -5,7 +5,6 @@
 #include "h/Fabrica.h"
 
 #include "h/IUsuario.h"
-//prueba
 
 using namespace std;
 
@@ -125,7 +124,7 @@ void cargarDatos() {
 }
 
 void iniciarSesion() {
-	cout << "Ingrese usuario y contraseña" << endl;
+	cout << "Ingrese usuario y contraseÃ±a" << endl;
 	cout << "USUARIO: " << endl;
 
 	string user = getStringInput();
@@ -134,7 +133,7 @@ void iniciarSesion() {
     interface_usuario->inicioNick(user);
 	//inicioNick(user);
 
-	cout << "CONTRASEÑA: " << endl;
+	cout << "CONTRASEÃ‘A: " << endl;
 	string pass = getStringInput();
 }
 
@@ -163,7 +162,7 @@ int main() {
 			cout << "-------------------" << endl;
 			break;
 		default:
-			cout << "Porfavor ingrese una selección valida\n" << endl;
+			cout << "Porfavor ingrese una selecciÃ³n valida\n" << endl;
 			break;
 		}
 	} while (seleccion != 10);
