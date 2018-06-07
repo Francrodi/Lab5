@@ -1,4 +1,5 @@
 #include "../h/Funcion.h"
+#include <stdexcept>
 
 Funcion::Funcion(int idFuncion, DtFecha fecha, DtHorario horario, int asientos_reservados, Sala* sala) : ICollectible() {
 	this->idFuncion = idFuncion;
