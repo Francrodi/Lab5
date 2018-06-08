@@ -23,6 +23,7 @@ class Cine: public ICollectible {
 		virtual ~Cine();
 		int getID();
 		int getPrecioAsiento();
+		string getDireccion();
 
 		DtCine* getInfoCine();
 	};

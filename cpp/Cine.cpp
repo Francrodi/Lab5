@@ -15,14 +15,18 @@ Cine::~Cine() {
 	this->peliculas->~ICollection();
 }
 
-int Cine::getID(){
+int Cine::getID() {
 	return this->idCine;
 }
 
-int Cine::getPrecioAsiento(){
+int Cine::getPrecioAsiento() {
 	return this->precio_asiento;
 }
 
-DtCine* Cine::getInfoCine(){
+string Cine::getDireccion() {
+	return this->direccion;
+}
+
+DtCine* Cine::getInfoCine() {
 	return new DtCine(this->idCine, this->direccion);
 }

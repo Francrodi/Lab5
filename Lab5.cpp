@@ -20,10 +20,6 @@ string getStringInput() {
 	return input;
 }
 
-void printStart() {
-	cout << "Bienvenidos al menu" << endl;
-}
-
 void printMainMenu() {
 	cout << "[1] CARGAR DATOS"     << endl;
 	cout << "[2] INICIAR SESION"   << endl;
@@ -38,86 +34,150 @@ void printMainMenu() {
 	cout << "Ingrese opcion: ";
 }
 
-void cargarDatos() {
-	cout << "Empezando la carga de datos..." << endl;
-	cout << "------------------------------" << endl;
+void printCargaCine(Cine* cine) {
+	cout << "\tSe agrega el cine:" << endl;
+	cout << "\t\tID                - " << cine->getID() << endl;
+	cout << "\t\tDirección         - " << cine->getDireccion() << endl;
+	cout << "\t\tPrecio de entrada - " << cine->getPrecioAsiento() << endl;
+	cout << "\n";
+}
 
+void printCargaSala(Sala* sala) {
+	cout << "\tSe agrega la sala:" << endl;
+	cout << "\t\tID        - " << "" << endl;
+	cout << "\t\tCapacidad - " << "" << endl;
+	cout << "\t\tCine      - " << "" << endl;
+	cout << "\n" << endl;
+}
+
+void cargarDatos() {
 	/////////////////////////////////////////////////
 	// TODO: Agregar los datos al programa
 	Fabrica* fabrica = Fabrica::getFabrica();
 
+	/////////////////////////////////////////////////
+
+	cout << "Empezando la carga de datos..." << endl;
+
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- CINES
-	int contCine;
+	// TODO: Usar controladores
+	// TODO: Agregar coleccion global (Si es necesario)
 	cout << "CINES" << endl;
 
-	cout << "\tSe agrega el cine: " << endl;
+	// C1 - 21 de Setiembre 6658 - 300
+	Cine* cine1 = new Cine(1,"21 de Setiembre de 6658",300);
+	printCargaCine(cine1);
+
+	// C2 - Miguel Barreiro 4588 - 250
+	Cine* cine2 = new Cine(2,"Miguel Barreiro 4588",250);
+	printCargaCine(cine2);
 
 	cout << "Se completa la carga de cines" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- SALAS
-	int contSala;
 	cout << "SALAS" << endl;
 
-	cout << "\tSe agrega la sala: " << endl;
+	// S11 - 20 - C1
+	Sala* sala1;
+	printCargaSala(sala1);
+
+	// S12 - 60 - C1
+
+	// S13 - 30 - C1
+
+	// S21 - 200 - C2
+
+	// S22 - 60 - C2
 
 	cout << "Se completa la carga de salas" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- PELICULAS
-	int contPelicula;
 	cout << "PELICULAS" << endl;
 
 	cout << "\tSe agrega la pelicula: " << endl;
 
 	cout << "Se completa la carga de peliculas" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- FUNCIONES
-	int contFuncion;
 	cout << "FUNCIONES" << endl;
 
 	cout << "\tSe agrega la funcion: " << endl;
 
 	cout << "Se completa la carga de funciones" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- USUARIOS
-	int contUsuarios;
 	cout << "USUARIOS" << endl;
 
 	cout << "\tSe agrega el usuario: " << endl;
 
 	cout << "Se completa la carga de usuarios" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- FINANCIERAS
-	int contFinancieras;
 	cout << "FINANCIERAS" << endl;
 
 	cout << "\tSe agrega la financiera: " << endl;
 
 	cout << "Se completa la carga de financieras" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- COMENTARIOS
-	int contComentarios;
 	cout << "COMENTARIOS" << endl;
 
 	cout << "\tSe agrega el comentario: " << endl;
 
 	cout << "Se completa la carga de comentarios" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- PUNTAJES
-	int contPuntajes;
 	cout << "PUNTAJES" << endl;
 
 	cout << "\tSe agrega el puntaje: " << endl;
 
 	cout << "Se completa la carga de puntajes" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
+	/////////////////////////////////////////////////
+
 	// -- RESERVAS
-	int contReservas;
 	cout << "RESERVAS" << endl;
 
 	cout << "\tSe agrega la reserva: " << endl;
 
 	cout << "Se completa la carga de reservas" << endl;
 
+	/////////////////////////////////////////////////
+	cout << "------------------------------" << endl;
 	/////////////////////////////////////////////////
 
 	cout << "Termina la carga de datos" << endl;
@@ -139,7 +199,7 @@ void iniciarSesion() {
 
 int main() {
 
-	printStart();
+	cout << "Bienvenidos al menu" << endl;
 
 	int seleccion = 0;
 
