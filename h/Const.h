@@ -12,4 +12,7 @@ const int MAX_DIA     = 30;
 const int MIN_MES     = 1;
 const int MAX_MES     = 12;
 
+enum EnumBanco {Santander, BBVA, Itau, Brou};
+enum EnumUsuario {administrador, comun};
+
 #endif
